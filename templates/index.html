@@ -1,1 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Stories</h1>
+    {% for story in stories %}
+    <h2>{{ story.title }}</h2>
+    <p>{{ story.content }}</p>
+    {% endfor %}
+    <a href="/submit">Submit a New Story</a>
+</body>
+</html>
 
